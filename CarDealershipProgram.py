@@ -26,6 +26,10 @@ def main():
 
     car_lot = [Car1, Car2, Car3, Car4, Car5, Car6, Car7, Car8, Car9, Car10]
     print "This is an Exotic Car Dealership \nWe have " + str(len(car_lot)) + " cars on our lot!"
+    yes_or_no = raw_input("Would you like to proceed? Yes or No: ")
+    if yes_or_no == "no".lower():
+        print "Okay bye"
+        quit()
     min_price = input("Whats the minimum you want to spend on a vehicle today? ")
     max_price = input("What is the maximum you want to spend on a vehicle today? ")
 
